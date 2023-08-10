@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:video_recording_app/screens/camera.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:video_recording_app/screens/home_screen.dart';
+import 'package:video_recording_app/screens/profile.dart';
 
 class OtpVerification extends StatefulWidget {
   final CameraDescription camera;
@@ -188,7 +188,7 @@ class _OtpVerificationState extends State<OtpVerification> {
       await preferences.setString("userID", userCredential.user?.uid ?? '');
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomeScreen(camera: widget.camera)), // Replace 'HomePage' with your actual home page widget
+        MaterialPageRoute(builder: (context) => Profile(camera: widget.camera)), // Replace 'HomePage' with your actual home page widget
       );
     } catch (error) {
       print("Error: $error");

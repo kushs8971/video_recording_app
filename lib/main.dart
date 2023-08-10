@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:video_recording_app/screens/camera.dart';
-import 'package:video_recording_app/screens/home_screen.dart';
 import 'package:video_recording_app/screens/otp.dart';
 import 'package:video_recording_app/screens/splash.dart';
 import 'screens/profile.dart';
